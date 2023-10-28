@@ -9,6 +9,11 @@ describe('Funcionalidade Pré Cadastro', () => {
         cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
     });
 
+    afterEach(() => {
+        cy.screenshot()
+
+    });
+
     it('Deve completar o pré cadastro com sucesso', () => {
         let emailFaker = faker.internet.email()
         let firstName = faker.person.firstName()
