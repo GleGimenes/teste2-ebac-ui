@@ -22,7 +22,7 @@ describe('Funcionalidade página de produtos', () => {
     });
 
     it.only('Deve adicionar um produto ao carrinho', () => {
-        var quantidade = 3
+        let quantidade = 3
 
         cy.get('[class="product-block grid"]')
             .contains('Grayson Crewneck Sweatshirt').click()
