@@ -4,7 +4,10 @@
   "description": "Repositorio para teste de automação pelo Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "cy:run": "npx cypress run",
+    "cy:open": "npx cypress open",
+    "cy:report": "npx cypress run --record --key 954f21aa-ef1d-4948-8973-09d02e8cd4a5"
   },
   "keywords": [],
   "author": "",
