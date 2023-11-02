@@ -10,7 +10,7 @@ class EnderecoPage {
         cy.get('#billing_address_1').clear().type(endereco)
         cy.get('#billing_address_2').clear().type(numero)
         cy.get('#billing_city').clear().type(cidade)
-        //cy.get('#billing_state').clear().click().type(estado + '{Enter}')//corrigir essa linha
+        cy.get('#select2-billing_state-container').type(estado).trigger('keydown', { keyCode: 13, which: 13});// este comando '{enter}'não estava funcionando, então usei o comando 'trigger' para simular o enter alterei.	
         cy.get('#billing_postcode').clear().type(cep)
         cy.get('#billing_phone').clear().type(telefone)
         cy.get('#billing_email').clear().type(email)
